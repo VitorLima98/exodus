@@ -13,14 +13,14 @@
 
 .screen {
     position: relative;
-    width: 500px;
+    width: 300px;
     border: 4px solid rgba(0, 110, 255, 0.459);
     aspect-ratio: 10/16;
     border-radius: 20px;
     background-color: rgba(20, 47, 112, 0.85);
 
     display: inline-block;
-    padding: 1rem 1rem;
+
     vertical-align: middle;
 }
 
