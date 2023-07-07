@@ -1,3 +1,8 @@
+.body {
+    display: flex;
+    flex-direction: row;
+}
+
 .h1 {
     padding: 0px;
     font-size: 12px;
@@ -14,7 +19,9 @@
     border-radius: 20px;
     background-color: rgba(20, 47, 112, 0.85);
 
-
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
 }
 
 .overlay {
@@ -48,24 +55,66 @@
     opacity: 0.6;
     border-radius: 15px;
     background-size: 300%;
-    animation: pan-image 6s ease infinite;
 
 }
 
-@keyframes pan-image {
+@keyframes pan-image00 {
+    0% {
+        background-position: 20% 20%;
+    }
+
+    25% {
+        background-position: 35% 75%;
+    }
+
+    80% {
+        background-position: 50% 50%;
+    }
+
+    100% {
+        background-position: 30% 50%;
+    }
+}
+
+@keyframes pan-image01 {
     0% {
         background-position: 80% 40%;
     }
 
-    25% {
+    30% {
         background-position: 60% 75%;
     }
 
-    80% {
+    60% {
         background-position: 75% 100%;
     }
 
     100% {
         background-position: 80% 40%;
     }
+}
+
+@keyframes pan-image02 {
+    0% {
+        background-position: 40% 50%;
+    }
+
+    100% {
+        background-position: 60% 30%;
+    }
+}
+
+#screen00 {
+    background-image: url("./eva00.jpg");
+    animation: pan-image00 6s ease infinite;
+}
+
+#screen01 {
+    background-image: url("./eva01.jpg");
+    animation: pan-image01 6s ease infinite;
+}
+
+#screen02 {
+    background-image: url("./eva02.jpg");
+    animation: pan-image02 6s ease infinite;
 }
