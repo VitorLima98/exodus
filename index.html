@@ -1,43 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>They are coming...</title>
     <link rel="stylesheet" href="styles.css">
+
 
 </head>
 
-<div class="screen">
+<body>
+    <div id="sidebar"></div>
 
-    <div class="screen-image" id="screen00">
-        EVA 00 - BATTLE MACHINE
+    <div id="description">
+        <h1 id="MODELTYPE"></h1>
+    </div>
+    <div id="selector" style="display: block" className="buttonsSelector">
+        <button id="a">EVA-00</button>
+        <button id="b">EVA-01</button>
+        <button id="c">EVA-02</button>
     </div>
 
-    <div class="overlay">
+    <div class="screen">
+
+        <div class="screen-image" id="insideScreen">
+            <h1 id="nickname">NO SIGNAL...</h1>
+        </div>
+
+        <div class="overlay">
+        </div>
+
     </div>
 
-</div>
 
-<div class="screen">
 
-    <div class="screen-image" id="screen01">
-        EVA 01 - BATTLE MACHINE
-    </div>
-
-    <div class="overlay">
-    </div>
-
-</div>
-
-<div class="screen">
-
-    <div class="screen-image" id="screen02">
-        EVA 02 - BATTLE MACHINE
-    </div>
-
-    <div class="overlay">
-    </div>
-
-</div>
-
-<div id="selector" style="visibility: hidden" className="buttonsSelector">
-    <button>A</button>
-    <button>B</button>
-    <button>C</button>
-</div>
+    <script src="script.js"></script>
+</body>
